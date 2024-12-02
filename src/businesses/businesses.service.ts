@@ -68,6 +68,7 @@ export class BusinessesService {
     return this.businessesRepository.create({
       // Do not remove comment below.
       // <creating-property-payload />
+      email: createBusinessDto.email,
       name: createBusinessDto.name,
       description: createBusinessDto.description,
       coverPhoto: photo,
@@ -150,6 +151,7 @@ export class BusinessesService {
     return this.businessesRepository.update(id, {
       // Do not remove comment below.
       // <updating-property-payload />
+      email: updateBusinessDto.email,
       name: updateBusinessDto.name,
       description: updateBusinessDto.description,
       coverPhoto: photo,
